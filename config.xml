@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+xmlns:NOKIA="http://www.ovi.com/widgetservice"
+        id="http://ArsTechnica"
+        version="1.0.0">
+
+    <name short="Ars Technica">Ars Technica</name>
+
+    <description>Articles of Ars Technica.</description>
+
+    <content src="index.html"/>
+    
+    <icon src="s40-theme/images/icon.png"/>
+
+    <!-- Note: Feed URL MUST BE Url encoded 
+         @see http://en.wikipedia.org/wiki/Percent-encoding -->
+    <preference name = "feedURLRSS"
+                value = "http://feeds.arstechnica.com/arstechnica/index"
+                readonly = "true"/>
+
+    <feature name="nokia://s40.nokia.com/SAWRT/2.3" required="true" />
+
+    <!-- Note: Author href MUST BE Url encoded 
+         @see http://en.wikipedia.org/wiki/Percent-encoding -->
+    <author email="support.geekvenk@outlook.com" href="">
+       Geekvenk 
+    </author>
+
+    <license>
+        GNU GPL 2013.
+    </license>
+</widget>

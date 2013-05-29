@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>    	
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <title>Ars Technica</title>
+		<script type="text/javascript" src="s40-theme/js/screensize.js"></script>
+		<script type="text/javascript" src="s40-theme/js/rssHorizView.js"></script>
+		<script type="text/javascript" src="s40-theme/js/rssVerticalView.js"></script>
+		<script type="text/javascript" src="s40-theme/js/jquery-1.4.4.min.js"></script>	
+        <script type="text/javascript" src="s40-theme/js/jquery.jfeed.js"></script>				
+		<script type="text/javascript" src="s40-theme/js/getRSS.js"></script>
+    </head>
+	<body>
+    
+		<!--RSSContent -->
+		<div class="container">
+			<div class="strip view0" id="views">
+	            <div id="verviewcontainer">
+	                <div id="verview">
+	                    <div class="pubDate_contnr"><div id="catPubDate" class="pubDate_txt"></div></div>
+	                    <div class="verHorloader">Loading...</div>
+	                </div>
+	            </div>
+				<div id="horview" class="hide"><div class="verHorloader">Loading...</div></div>		
+			</div>
+		</div>
+		<!-- End RSSContent -->
+
+        <script type="text/javascript">
+              window.onload=function(){getRSS('verview', 'horview', 'http://feeds.arstechnica.com/arstechnica/index')}
+        </script>
+
+    </body>
+</html>
